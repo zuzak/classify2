@@ -1,0 +1,19 @@
+{
+  "name": "classify2",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/mocha"
+  },
+  "author": "Douglas Gardner <douglas@chippy.ch>",
+  "license": "BSD",
+  "dependencies": {
+    "request": "~2.27.0",
+    "isbn": "~0.1.0",
+    "xml2js": "~0.2.8"
+  },
+  "devDependencies": {
+    "should": "~1.3.0",
+    "mocha": "~1.13.0"
+  }
+}
