@@ -32,10 +32,13 @@ function getData (isbn, callback) {
       if (error) { callback(null) }
       xml2js(body, function (err, result) {
         result = result.classify
-        var response = {
-          status: result.response[0]['$'].code,
-          dewey: result.recommendations[0].ddc[0].mostPopular[0]['$'].sfa,
-          congress: result.recommendations[0].lcc[0].mostPopular[0]['$'].sfa
+        var response = {}
+        try {
+          response.status = result.response[0]['$'].code,
+          response.dewey = result.recommendations[0].ddc[0].mostPopular[0]['$'].sfa,
+          response.congress = result.recommendations[0].lcc[0].mostPopular[0]['$'].sfa
+        } catch (e) {
+          // foo
         }
         callback(response)
       })
