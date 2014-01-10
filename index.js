@@ -26,7 +26,7 @@ function getData (isbn, callback) {
       url: ENDPOINT + isbn,
       json: true,
       headers: {
-        'User-Agent': 'foruli-classify2'
+        'User-Agent': 'npm-classify2'
       }
     }, function ( error, response, body) {
       if (error) { callback(null) }
