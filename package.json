@@ -8,7 +8,7 @@
   "author": "Douglas Gardner <douglas@chippy.ch>",
   "license": "BSD",
   "dependencies": {
-    "request": "~2.27.0",
+    "request": "~2.81.0",
     "isbn": "~0.1.0",
     "xml2js": "~0.2.8"
   },
