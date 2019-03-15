@@ -1,6 +1,6 @@
 {
   "name": "classify2",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "index.js",
   "scripts": {
     "test": "node_modules/.bin/mocha"
@@ -8,13 +8,13 @@
   "author": "Douglas Gardner <douglas@chippy.ch>",
   "license": "BSD",
   "dependencies": {
-    "request": "~2.27.0",
     "isbn": "~0.1.0",
+    "request": "^2.88.0",
     "xml2js": "~0.2.8"
   },
   "devDependencies": {
-    "should": "~1.3.0",
-    "mocha": "~1.13.0"
+    "mocha": "^6.0.2",
+    "should": "~1.3.0"
   },
   "engines": {
     "node": ">= 0.8"
