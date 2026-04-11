@@ -29,8 +29,9 @@ function getData (isbn, callback) {
         'User-Agent': 'npm-classify2'
       }
     }, function ( error, response, body) {
-      if (error) { callback(null) }
+      if (error) { return callback(null) }
       xml2js(body, function (err, result) {
+        if (err || !result) { return callback(null) }
         result = result.classify
         var response = {}
         try {
